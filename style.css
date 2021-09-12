@@ -1,0 +1,51 @@
+
+body {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* h1 very top row */
+h1 {
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    margin: 14px;
+}
+
+.flex-container{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: cornflowerblue;
+}
+
+.stats{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* makes 5-day forecast take up whole row*/
+.five-day-header{
+position:absolute;
+left:0;
+width:100%;
+}
+
+.forecast-header{
+    font-weight: bold;
+}
+
+.dayscontainer{
+    justify-content: space-evenly;
+    padding: 1px;
+    margin: 20px;
+}
+
+.day{
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    padding-right: 40px;
+}
