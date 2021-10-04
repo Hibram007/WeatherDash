@@ -2,22 +2,24 @@
 Server-Side API web application
 
 ## Description
-A simple web application that displays the weather for different cities on a dashboard that runs in the browser and features dynamically updated HTML and CSS.
-This application uses third-party APIs to access weather information and utilizes localStorage to store any persistent data.
+The following project is a MVP of a simple app that displays the weather for different cities. The content is being pulled from a thirdparty weather library/site using the FETCH API and the content is dynamically displayed. 
 
-## Powered By
+## TOOLS USED
 - HTML 
 - CSS
 - Bootstrap
 - AJAX
 - FontAwesome
 - JavaScript
-- Sever Side API
+- FETCH API
+- WEATHER APP API 
 
-## Preview
-![Site]() 
+## Screenshot image
+![weatherDash](https://user-images.githubusercontent.com/87105978/135932949-8f76a4ab-296d-4e1c-b445-d9cd55dc6ada.PNG)
 
-## Preview Link
-Preview the Weather Dashboard 
+## Link
+https://hibram007.github.io/WeatherDash/
+
+
 
 
