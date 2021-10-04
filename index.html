@@ -2,111 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Weather app</title>
-    <!--bootstrap link to third party library-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!--My css style sheet link-->
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather App</title>
 </head>
-
 <body>
-    <div class="flex-container">
-        <header class="row">
-          <h1 class="header"> WEATHER DASHBOARD </h1>
-        </header>
 
-        <div class="row">
-          <!-- Column Left-->
-          <div class="col-12 col-md-4">
-            <div class="card">
-              <h3 class="card-header text-uppercase"> Search for a city </h3>
-              <form id="city-form" class="card-body">
-                <label class="form-label" for="cityname"> City Name </label>
-                <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input"/>
-                <button type="submit" class="btn"> Search </button><br>
-                <button type="submit" class="city1-btn"> Austin </button><br>
-                <button type="submit" class="city2-btn"> Los Angeles </button><br>
-                <button type="submit" class="city3-btn"> Denver </button><br>
-              </form>
-            </div>
-            </div>
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
 
-
-<!-- Column Right-->
-          <div class="col">
-            <div class="stats">
-                <h2 class="stats-header"> AREA OF DOM EL</h2>
-                <p>Temp:</p>
-                <p> Wind:</p>
-                <p> Humidity:</p>
-                <p> UV Index:</p>
+    <div class="container">
+        <div class="search">
+            <div class="row">
+                <h1>Search for a City:</h1>
             </div>
-
-<!-- 5-day forcast area -->
-        <div class="flex-row forecast">
-          <div class="five-day-header">
-            <h3 class="forecast-header"> 5-Day Forecast:</h3>
-          </div><br>
-           
-          <div class=" row dayscontainer">
-            <div class="day">
-                <h4 class="date"> from api</h4>
-                <p> Icon from API </p>
-                <p>Temp:</p>
-                <p> Wind:</p>
-                <p> Humidity:</p>
-                <p> UV Index:</p>
+            <div class="row">
+                <input type="text" class="searchInput" placeholder="Tucson, AZ">
+                <button type="submit" class="searchBtn">
+                <i class="fas fa-search"></i>
+                </button>
             </div>
-            <div class="day">
-                <h4 class="date"> from api</h4>
-                <p> Icon from API </p>
-                <p>Temp:</p>
-                <p> Wind:</p>
-                <p> Humidity:</p>
-                <p> UV Index:</p>
-            </div>
-            <div class="day">
-                <h4 class="date"> from api</h4>
-                <p> Icon from API </p>
-                <p>Temp:</p>
-                <p> Wind:</p>
-                <p> Humidity:</p>
-                <p> UV Index:</p>
-            </div>
-            <div class="day">
-                <h4 class="date"> from api</h4>
-                <p> Icon from API </p>
-                <p>Temp:</p>
-                <p> Wind:</p>
-                <p> Humidity:</p>
-                <p> UV Index:</p>
-            </div>
-            <div class="day">
-                <h4 class="date"> from api</h4>
-                <p> Icon from API </p>
-                <p>Temp:</p>
-                <p> Wind:</p>
-                <p> Humidity:</p>
-                <p> UV Index:</p>
-            </div>
-          </div>
-
-          </div>
+            <div class="historyItems"></div>
         </div>
+        <div class="col-two-container">
+            <div class="forecast">
+                <div class="row">
+                    <h1 class="cityName">City Name</h1>
+                    <h1 class="currentDate"></h1>
+                    <img class="weatherIcon"></img>
+                </div>
+                <div class="row">
+                    <p class="temp">Temperature:</p>
+                </div>
+                <div class="row">
+                    <p class="humidity">Humidity:</p>
+                </div>
+                <div class="row">
+                    <p class="windSpeed">Wind Speed:</p>
+                </div>
+                <div class="row">
+                    <p class="uvIndex">UV Index:</p>
+                </div>
+            </div>
 
-          </div>
+            </div>
         </div>
-      </div>
-
-<!-- Optional JavaScript -->
-<script src="script.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    </div>
+    
 </body>
+<script src="script.js"></script>
 </html>
