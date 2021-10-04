@@ -1,4 +1,4 @@
-# weather-dashboard ⛅️
+# Weather Dashboard 
 Server-Side API web application
 
 ## Description
@@ -19,7 +19,6 @@ The following project is a MVP of a simple app that displays the weather for dif
 
 ## Link
 https://hibram007.github.io/WeatherDash/
-
 
 
 
